@@ -6,10 +6,14 @@ import DetailsScreen from './screens/DetailsScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import LoginScreen from './screens/LoginScreen';
 
+
+
 const stack = createStackNavigator();
 
 export default function App() {
+
   return (
+    
     <NavigationContainer>
       <stack.Navigator initialRouteName="Login">
         <stack.Screen name="Login" component={LoginScreen} options={{headerShown: false }}/>

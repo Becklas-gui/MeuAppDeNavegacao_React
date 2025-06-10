@@ -9,8 +9,10 @@ export default function LoginScreen ({navigation}) {
     let [login,setlogin] = useState(null);
     let [senha,setsenha] = useState(null);
 
+
+
     const verificarlogin = () => {
-        if((login=="Aluno")&&(senha=="1234")){
+        if((login=="user")&&(senha=="senha")){
             navigation.navigate('Home');
         }else{
             alert("Login ou senha errada! Tente ler o texto que aparece quando os campos estão vazios");
@@ -18,7 +20,7 @@ export default function LoginScreen ({navigation}) {
     };
 
     return (
-        <ImageBackground source={require('../imgs/ghibli.png')} style={styles.image}>
+       
         <View style={styles.container }>
             <Text style={styles.title} >Login de usuário</Text>
             <View style={styles.textcontainer}>
@@ -33,10 +35,12 @@ export default function LoginScreen ({navigation}) {
             <Button title="Entrar" onPress={verificarlogin}/>
             </View>
         </View>
-        </ImageBackground>
+
     );
 }
 
+
+//styles
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -51,7 +55,7 @@ const styles = StyleSheet.create({
     },
 
     buttonContainer: {
-        backgroundColor: '#add8e6',
+        backgroundColor: '#00FFFF',
         margin: 10,
         width: windowWidht * 0.5,
         borderRadius: 500,
@@ -66,14 +70,6 @@ const styles = StyleSheet.create({
         borderRadius: 5
     },
 
-    image: {
-        flex: 1,
-        justifyContent: 'center',
-        resizeMode: 'cover',
-        width: "100%",
-        height: '100%',
-        alignItems: 'center',
-    },
 
     textcontainer: {
         width: "60%",

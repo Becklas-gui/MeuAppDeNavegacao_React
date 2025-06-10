@@ -3,7 +3,7 @@ import { View, Text, Button, StyleSheet, Dimensions } from 'react-native';
 
 const windowWidht = Dimensions.get('window').width;
 
-export default function Homescreen ({ navigation }) {
+export default function HomeScreen ({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Home screen</Text>
@@ -31,6 +31,8 @@ export default function Homescreen ({ navigation }) {
     );
 }
 
+//styles
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -45,7 +47,7 @@ const styles = StyleSheet.create({
     },
 
     buttonContainer: {
-        backgroundColor: '#add8e6',
+        backgroundColor: '#00FFFF',
         margin: 10,
         width: windowWidht * 0.5,
         borderRadius: 5,

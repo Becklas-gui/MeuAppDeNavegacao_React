@@ -23,6 +23,7 @@ export default function DetailsScreen({ navigation }) {
     );
 }
 
+//styles
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
     },
 
     buttonContainer: {
-        backgroundColor: '#ffebcd',
+        backgroundColor: '#00FFFF',
         margin: 10,
         width: windowWidht * 0.5,
         borderRadius: 5,
